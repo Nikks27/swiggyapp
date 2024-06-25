@@ -52,7 +52,9 @@ class _NotificatinScreenState extends State<NotificatinScreen> {
                      actions: [
                        Row(
                          children: [
-                           Text(' Allow '),
+                           TextButton(onPressed: () {
+                             Navigator.of(context).pushNamed('/');
+                           }, child: Text('Allow ')),
                            TextButton(onPressed: () {
                              Navigator.of(context).pop();
                            }, child: Text('Dont Allow '))
@@ -67,7 +69,7 @@ class _NotificatinScreenState extends State<NotificatinScreen> {
              ),
              SizedBox(height: 10,),
              TextButton(onPressed:() {
-
+               Navigator.of(context).pushNamed('/');
              }, child: Text('Not now ',style: TextStyle(fontSize: 20),),)
            ],
        ),
