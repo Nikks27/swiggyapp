@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'QuoteScreen.dart';
+import 'addlocation.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   {
     Timer(Duration(seconds: 3),()
     {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => NotificatinScreen(),));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Addlocation(),));
     },);
   }
   @override
